@@ -1,0 +1,19 @@
+{
+  "name": "mhttp",
+  "version": "0.0.1",
+  "description": "A simple http server",
+  "main": "dist/src/index.js",
+  "author": "Mayant Mukul",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "yarn build",
+    "start": "node dist/mhttp.js",
+    "build": "node build.js",
+    "types": "tsc --noEmit -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.15.14",
+    "typescript": "^4.9.3"
+  }
+}
